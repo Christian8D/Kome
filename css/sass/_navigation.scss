@@ -3,7 +3,53 @@
 /*-------------------------------------------------------*/
 
 // Bootstrap 991px breakpoint
-@media (max-width:991px){.navbar-header{float:none}.navbar-left,.navbar-nav,.navbar-right{float:none!important}.navbar-toggle{display:block}.navbar-collapse{border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-collapse.collapse{display:none!important}.navbar-nav{margin-top:7.5px}.navbar-nav>li{float:none}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px}.collapse.in{display:block!important}.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;-webkit-box-shadow:none;box-shadow:none}}
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-nav,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
 
 .navbar {
   margin-bottom: 0;
@@ -12,7 +58,7 @@
   min-height: 60px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  @include transition ($all);
+  @include transition($all);
   z-index: 120;
 }
 
@@ -22,7 +68,7 @@
 }
 
 .navigation-overlay {
-  @include transition ($all);
+  @include transition($all);
 }
 
 // Logo
@@ -114,7 +160,6 @@
   text-decoration: none;
 }
 
-
 /* Navigation Toggle
 -------------------------------------------------------*/
 
@@ -130,11 +175,13 @@
     width: 18px;
   }
 
-  &:focus .icon-bar, &:hover .icon-bar {
+  &:focus .icon-bar,
+  &:hover .icon-bar {
     background-color: $heading-color;
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: transparent;
   }
 }
@@ -142,7 +189,6 @@
 .dark-bg .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-
 
 /* Nav Side Icon
 -------------------------------------------------------*/
@@ -161,7 +207,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  @include transform(translate(-50%,-50%));
+  @include transform(translate(-50%, -50%));
 
   .nav-icon-inner {
     display: table-cell;
@@ -175,7 +221,7 @@
     display: block;
     position: relative;
     top: 3px;
-    @include transform(translate3d(0,0,0));
+    @include transform(translate3d(0, 0, 0));
   }
 
   span {
@@ -192,7 +238,8 @@
       top: 0px;
     }
 
-    &:nth-child(2), &:nth-child(3) {
+    &:nth-child(2),
+    &:nth-child(3) {
       top: 5px;
     }
 
@@ -225,7 +272,6 @@
 .mobile .main-wrapper.opened {
   cursor: pointer;
 }
-
 
 /*-------------------------------------------------------*/
 /* Nav Type-1 (Left Nav)
@@ -265,19 +311,18 @@
 
   &.opened {
     left: 0;
-  }    
+  }
 
   .social-icons {
     position: absolute;
     bottom: 60px;
 
-    @media(max-height: 960px) {
+    @media (max-height: 960px) {
       position: static;
       margin-top: 100px;
     }
   }
 }
-
 
 .navbar-header,
 .logo-container {
@@ -315,18 +360,16 @@
   .navbar-nav {
     opacity: 0;
     @include transform(translateX(-30%));
-    @include transition(.6s ease-in-out);
+    @include transition(0.6s ease-in-out);
   }
 }
 
 .nav-type-1.opened {
-
   .navbar-nav {
     @include transform(translateX(0));
     opacity: 1;
   }
 }
-
 
 /* Mobile social icons
 -------------------------------------------------------*/
@@ -337,18 +380,16 @@
   bottom: 0;
 }
 
-
 /*-------------------------------------------------------*/
 /* Navigation Mobile Styles
 /*-------------------------------------------------------*/
 
 @media (max-width: 991px) {
-
   .navbar-header {
     width: 100%;
     padding-right: 0;
   }
-  
+
   .navbar,
   .logo-wrap > a,
   .navbar-header {
@@ -422,7 +463,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    left: 0;    
+    left: 0;
   }
 
   .nav-item-submenu li a {

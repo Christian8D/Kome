@@ -1468,7 +1468,7 @@ ol.numbers {
 
 .logo,
 .logo-dark {
-  max-height: 25px;
+  max-height: 100%;
 }
 
 .navbar-header {
@@ -1963,13 +1963,6 @@ ol.numbers {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
 }
 
-/*!
- * fullPage 2.8.8
- * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */
 html.fp-enabled,
 .fp-enabled body {
   margin: 0;
