@@ -1377,6 +1377,7 @@ ol.numbers {
 /*-------------------------------------------------------*/
 /* Navigation
 /*-------------------------------------------------------*/
+
 @media (max-width: 991px) {
   .navbar-header {
     float: none;
@@ -1673,6 +1674,7 @@ ol.numbers {
 /*-------------------------------------------------------*/
 /* Nav Type-1 (Left Nav)
 /*-------------------------------------------------------*/
+
 .content-wrap {
   margin-left: 320px;
   position: relative;
@@ -1686,7 +1688,7 @@ ol.numbers {
 .header-wrap {
   width: 320px;
   height: 100%;
-  background-color: #fafafa;
+  background-color: transparent;
   padding: 70px 75px;
   display: inline-block;
   float: left;
@@ -1750,7 +1752,7 @@ ol.numbers {
 #nav-trigger {
   height: 100%;
   width: 80px;
-  background-color: #fff;
+  background-color: transparent;
   display: inline-block;
   float: left;
   position: relative;
@@ -1781,6 +1783,22 @@ ol.numbers {
   transform: translateX(0);
   opacity: 1;
 }
+
+@media (min-width: 991px) {
+.triangle {
+  -webkit-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-clip-path: polygon(15% 0, 26% 50%, 15% 100%, 0% 100%, 2% 50%, 0% 0%);
+  clip-path: polygon(15% 0, 26% 50%, 15% 100%, 0% 100%, 2% 50%, 0% 0%);
+  
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: .75;
+}}
 
 /* Mobile social icons
 -------------------------------------------------------*/
