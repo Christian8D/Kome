@@ -1382,6 +1382,9 @@ ol.numbers {
   .navbar-header {
     float: none;
   }
+  .header-wrap {
+    background-color: white !important;
+  }
   .navbar-left, .navbar-nav, .navbar-right {
     float: none !important;
   }
@@ -1389,7 +1392,8 @@ ol.numbers {
     display: block;
   }
   .navbar-collapse {
-    border-top: 1px solid transparent;
+    background-color: white;
+    border-top: 1px solid traparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   .navbar-fixed-top {
@@ -1683,6 +1687,7 @@ ol.numbers {
 
 .container {
   max-width: 100%;
+  display: flex;
 }
 
 .header-wrap {
@@ -2547,8 +2552,9 @@ address {
   padding-top: 35px;
 }
 
-.title-text {
+.page-title img {
   /* width: 10%; */
+  display: flex;
 }
 
 .page-title {
