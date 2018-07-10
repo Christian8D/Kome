@@ -3,43 +3,38 @@
 
 <head>
   <title>Kome Parnell | Home</title>
-
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
-
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Poppins:400,600%7CHind:400,400i,700' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 
   <!-- Css -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/font-icons.css" />
   <link rel="stylesheet" href="css/sliders.css" />
   <link rel="stylesheet" href="css/style.css" />
-
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
 </head>
 
 <body class="relative">
-
   <!-- Preloader -->
   <div class="loader-mask">
     <div class="loader"></div>
   </div>
-
   <!-- Navigation -->
   <header class="nav-type-1">
     <div class="triangle "></div>
     <nav class="navbar">
       <div class="header-wrap ">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -47,7 +42,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
           <!-- Logo -->
           <div class="logo-container">
             <div class="logo-wrap">
@@ -58,12 +52,9 @@
           </div>
         </div>
         <!-- end navbar-header -->
-
         <div class="nav-wrap">
           <div class="collapse navbar-collapse" id="navbar-collapse">
-
             <ul class="nav navbar-nav">
-
               <li class="nav-item-toggle active">
                 <a href="index-kenburns.html">Home</a>
               </li>
@@ -74,13 +65,13 @@
                 <a href="#">Gallery</a>
                 <ul class="nav-item-submenu">
                   <li>
-                    <a href="gallery-4-cols.html">Weddings</a>
+                    <a href="gallery-weddings.html">Weddings</a>
                   </li>
                   <li>
-                    <a href="gallery-4-cols.html">Couples</a>
+                    <a href="gallery-couples.html">Couples</a>
                   </li>
                   <li>
-                    <a href="gallery-4-cols.html">Portraits</a>
+                    <a href="gallery-portraits.html">Portraits</a>
                   </li>
                 </ul>
               </li>
@@ -115,12 +106,10 @@
                   </a>
                 </div>
               </li>
-
             </ul>
           </div>
         </div>
         <!-- end nav-wrap -->
-
         <!-- Social icons -->
         <div class="social-icons nobase dark clearfix hidden-sm hidden-xs">
           <a target="_blank" href="https://www.instagram.com/komeparnell/?hl=en">
@@ -136,11 +125,8 @@
             <i class="ui-vimeo"></i>
           </a>
         </div>
-
       </div>
       <!-- end header wrap -->
-
-
       <!-- Nav trigger -->
       <div id="nav-trigger">
         <div id="nav-icon">
@@ -155,41 +141,70 @@
         </div>
       </div>
       <!-- end nav trigger -->
-
     </nav>
     <!-- end navbar -->
   </header>
-
   <main class="main-wrapper oh">
     <!-- Hero Slider -->
     <section class="section-wrap nopadding gradient-overlay pl-80" id="hero-section">
-
       <div class="hero-holder">
         <h1>Kome Parnell</h1>
         <h2>Photographer</h2>
       </div>
 
+      </div>
       <canvas id="kenburns" class="container-full-height"></canvas>
-
     </section>
     <!-- end hero slider -->
+    <div class="divider"></div>
+    <!-- Page Title -->
+    <section class="page-title text-center" style="background-image: url(img/kp.jpg);">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>About Me</h1>
+            <h2 class="subheading">Independent Creative Photographer</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end page title -->
+    <!-- Intro -->
+    <section class="section-wrap-lg intro" id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+            <p class="mb-50">
+              I am a photographer working with clients from New York to San Diego for over 10 years. I specialize in portrait and wedding
+              photography with this collection of images being amongst some of my favorite that I hope you enjoy. I live
+              with my boyfriend in our corner of San Diego with our 2 cats Kiko and Pedro and our Pomeranian Paco who swears
+              he's a human. I have an absurd love of musicals since I was little so yes, Hamilton is high on that list (like
+              crazy high), Wes Anderson movies and I can binge watch Bones, Grey's Anatomy or Fringe while editing and almost
+              quote any scene without looking while editing..yeah even the end production credits. I am SO ver proud. I am
+              a tea and scotch drinker (not at the same time... or am I?). I LOVE Photography. My next favorite is showing
+              off my non existent dance moves but hey.. feeling free to express a moment of pure joy when you capturing great
+              photos deserves it so let's experience it together :)
+            </p>
+            <img src="img/signature.jpg" alt="">
+          </div>
+          <!-- end col -->
+        </div>
+      </div>
+    </section>
+    <!-- end intro -->
   </main>
   <!-- end main wrapper -->
-
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-
   <!-- Kenburns -->
   <script type="text/javascript">
     function initKenburns() {
-
       var $canvas = $('#kenburns');
       $canvas.attr('width', $(window).width());
       $canvas.attr('height', $(window).height());
-
       $('#kenburns').kenburns({
         images: ['img/portfolio/kenburns_1',
           'img/portfolio/kenburns_2.jpg',
@@ -202,24 +217,17 @@
         zoom: 1
       });
     }
-
     initKenburns();
-
-
     $(window).resize(function () {
       $('#kenburns').remove();
-
       $('body #hero-section').append('<canvas id="kenburns"></canvas>');
       var $canvas = $('#kenburns');
-
       $canvas.attr('width', $(window).width());
       $canvas.attr('height', $(window).height());
-
       var windowWidth = $(window).width();
       if (windowWidth <= 974) {
         $canvas.attr('height', $(window).height() - 60);
       }
-
       $('#kenburns').kenburns({
         images: ['img/portfolio/kenburns_1.jpg',
           'img/portfolio/kenburns_2.jpg',
@@ -232,9 +240,7 @@
         zoom: 1
       });
     });
-
   </script>
-
 </body>
 
 </html>

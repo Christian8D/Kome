@@ -1,7 +1,7 @@
 <?php 
 	if($_POST) {
 
-		$to = "beawesome@komeparnell.com"; // Your email here
+		$to = "kome@komeparnell.com"; // Your email here
 		$subject = 'Message from my website'; // Subject message here
 
 	}
@@ -16,13 +16,14 @@
 	}
 
 	//Check if $_POST vars are set
-	if(!isset($_POST['name']) || !isset($_POST['mail']) || !isset($_POST['comment'])){
+	if(!isset($_POST['name']) || !isset($_POST['mail']) || !isset($_POST['phone']) || !isset($_POST['comment'])){
 		echo json_encode(array('info' => 'error', 'msg' => 'Please fill out all fields'));
 	}
 
 	//Sanitize input data, remove all illegal characters	
 	$name    = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 	$mail    = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+	$phone   = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_INT);
 	$subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
 	$website = filter_var($_POST['website'], FILTER_SANITIZE_STRING);
 	$comment = filter_var($_POST['comment'], FILTER_SANITIZE_STRING);
@@ -30,6 +31,10 @@
 	//Validation
 	if($name == '') {
 		echo json_encode(array('info' => 'error', 'msg' => "Please enter your name."));
+		exit();
+	}
+	if($phone == '') {
+		echo json_encode(array('info' => 'error', 'msg' => "Please enter your phone-number."));
 		exit();
 	}
 	if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
@@ -46,5 +51,5 @@
 	'Reply-To: '.$mail.'' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
-	send_mail($to, $subject, $comment . "\r\n\n"  .'Name: '.$name. "\r\n" .'Email: '.$mail, $headers);
+	send_mail($to, $subject, $comment . "\r\n\n"  .'Name: '.$name. "\r\n" .'Email: '.$mail .'Phone: ' .$phone, $headers);
 ?>
