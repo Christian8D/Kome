@@ -1,0 +1,54 @@
+.grid-yay {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 52.5% 5% 32.5%;
+  height: 500px;
+  width: 100%;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 30px;
+}
+
+.sub h1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-size: 19px;
+  padding-left: 15%;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.subo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-size: 18px;
+  padding-left: 15%;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.want-more {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.want-more p {
+  transform: rotate(90deg);
+}
+
+#kp-og {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+@media (max-width: 991px) {
+}
